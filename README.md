@@ -1,15 +1,15 @@
 # FUTURE_CS_02
-##Phishing Email Detection & Awareness System
+## Phishing Email Detection & Awareness System
 
 
-##🎯Project Objective
+## 🎯Project Objective
 To demonstrate a systematic approach to analyze real phishing email samples , identify common phishing indicators , classify email risk clearly.
 
-##🛠️Tools used
+## 🛠️Tools used
 Analysis: Google Admin Toolbox & MXToolbox (Header Parsing).
 Investigation:URL Checkers (Safe link inspection)
 
-##🔍Analysis Approach
+## 🔍Analysis Approach
 Collection: Securely obtaining phishing samples (.eml files) for inspection.
 Header Analysis: Examining SPF (Sender Policy Framework) , DKIM (Domain Keys Identified email) , and DMARC(Domain based Message Authentication,Reporting and conformance) records to verify sender authenticity.
 Attachments Inspection: Checking for files containing malware and hidden URL redirects.
