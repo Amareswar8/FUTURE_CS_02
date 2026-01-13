@@ -6,8 +6,8 @@
 To demonstrate a systematic approach to analyze real phishing email samples , identify common phishing indicators , classify email risk clearly.
 
 ## 🛠️Tools used
-- Analysis: Google Admin Toolbox & MXToolbox (Header Parsing).
-- Investigation:URL Checkers (https://www.virustotal.com/gui/home/upload)
+- Header Analysis: Google Admin Toolbox (https://mxtoolbox.com/EmailHeaders.aspx) & MXToolbox (https://toolbox.googleapps.com/apps/messageheader/).
+- URL,files and IP Investigation:URL Checkers (https://www.virustotal.com/gui/home/upload) , https://www.abuseipdb.com/
 
 ## 🔍Analysis Approach
 - Collection: Securely obtaining phishing samples (.eml files) for inspection.
