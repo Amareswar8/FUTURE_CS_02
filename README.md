@@ -7,7 +7,7 @@ To demonstrate a systematic approach to analyze real phishing email samples , id
 
 ## 🛠️Tools used
 - Analysis: Google Admin Toolbox & MXToolbox (Header Parsing).
-- Investigation:URL Checkers (Safe link inspection)
+- Investigation:URL Checkers (https://www.virustotal.com/gui/home/upload)
 
 ## 🔍Analysis Approach
 - Collection: Securely obtaining phishing samples (.eml files) for inspection.
