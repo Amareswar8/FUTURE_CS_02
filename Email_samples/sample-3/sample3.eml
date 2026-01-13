@@ -1,0 +1,167 @@
+Delivered-To: amareswar13724@gmail.com
+Received: by 2002:a05:6638:c4f:b0:5c6:320b:b7a4 with SMTP id g15csp5741258jal;
+        Sun, 28 Dec 2025 21:32:45 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IHu+Bamm1Mm7odGpGgpAz+D+gMAdjKdtK03e80O12KtNb7rB1p8HrKNS+YXRwWP0/4fwWHB
+X-Received: by 2002:a05:620a:4149:b0:8b2:4b6:22d4 with SMTP id af79cd13be357-8c09002816emr4670510685a.84.1766986365515;
+        Sun, 28 Dec 2025 21:32:45 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1766986365; cv=none;
+        d=google.com; s=arc-20240605;
+        b=QtHhfSMyDh+2v591trKRTwLsCzYubkqHJd0tofufMW+22+Kjx/1HfvmXYM51BQ97YD
+         vdHG47Y7lQskQWCg+yluuC705rEK4Ww2VftKMAhsVD3hZx9GdX8XF/NC0HgIEqS8cGa8
+         TXYEQ8ibRT9B/yw03jJO58CrSn3PRd0BFIl7X7mhyrLJes9yyDSzljuIakPZce4nl8q1
+         d14QsrOhbK7Tvb55p5a3mawEFkHaTy/LAbo2rS1LXefyt2TRlbzgcedqNUUIpMS1fKVF
+         W8BKgthWLeXg3PisXHfgEB8iecqdYyji45jzjtbiwUgUm5CH2nG9C2NP9c39Xd3ny9DC
+         JUEA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=date:mime-version:feedback-id:xopeners_181800:list-unsubscribe
+         :list-unsubscribe-post:message-id:subject:reply-to:from:to
+         :dkim-signature:dkim-signature;
+        bh=Ky+/XknaHikH3HHAneXj4BlIJqxnRdvE1creQ/mWXXc=;
+        fh=d2Xh1nUYHB9n0B8DUZ5kKhwKodv289wFgV3Zy3zi0Sc=;
+        b=KrkJABWrbducW9HFDK9MzjymbYRJOveWCMe5l15yPBdqMbqn2yEeS0YNhZ6SVDJKZE
+         y1ivN7MzH5XUt0+ebbi1ZGs08nXC6dLUnkUdtubVhLGonf9+EYBSxeu0Rk3YfNsZmZTK
+         YOWTWFsWupKZ6WqEAwS8fkKXQbnzPkipIMkY9MEjYH6PEGylIujxHsQK9I0E8SCVusBR
+         m6sP7/DKUltM7o9nl6ehi/sPJoZ6F+7DlCfiKE9BeusO16DsfrkrVzpvidTGkvryrFO9
+         WHYlPCjeW8UzitgPzxz5nSq4dhhrqRh3/FGb3Eoc3i7eiaeeueOq6sIrf7HkCWSm8vw5
+         l8OA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@wayfarertrip.com header.s=nc01 header.b=he5WVj23;
+       dkim=pass header.i=@mail.wayfarertrip.com header.s=nc01 header.b=dsXU9par;
+       spf=pass (google.com: domain of campaign-wayfarertripsmt-181800-4164005-45423057-i-e=gmail.com@mail.wayfarertrip.com designates 103.52.183.95 as permitted sender) smtp.mailfrom="campaign-wayfarertripsmt-181800-4164005-45423057-i-e=gmail.com@mail.wayfarertrip.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=wayfarertrip.com
+Return-Path: <campaign-wayfarertripsmt-181800-4164005-45423057-i-e=gmail.com@mail.wayfarertrip.com>
+Received: from newmta7-183.95.ncdelivery04.com (newmta7-183.95.ncdelivery04.com. [103.52.183.95])
+        by mx.google.com with ESMTPS id af79cd13be357-8c096eec229si2965132685a.235.2025.12.28.21.32.45
+        for <amareswar13724@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 28 Dec 2025 21:32:45 -0800 (PST)
+Received-SPF: pass (google.com: domain of campaign-wayfarertripsmt-181800-4164005-45423057-i-e=gmail.com@mail.wayfarertrip.com designates 103.52.183.95 as permitted sender) client-ip=103.52.183.95;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@wayfarertrip.com header.s=nc01 header.b=he5WVj23;
+       dkim=pass header.i=@mail.wayfarertrip.com header.s=nc01 header.b=dsXU9par;
+       spf=pass (google.com: domain of campaign-wayfarertripsmt-181800-4164005-45423057-i-e=gmail.com@mail.wayfarertrip.com designates 103.52.183.95 as permitted sender) smtp.mailfrom="campaign-wayfarertripsmt-181800-4164005-45423057-i-e=gmail.com@mail.wayfarertrip.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=wayfarertrip.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=nc01; d=wayfarertrip.com;
+ h=To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:Feedback-ID:MIME-Version:Content-Type:Date:from:to:subject;
+ bh=Ky+/XknaHikH3HHAneXj4BlIJqxnRdvE1creQ/mWXXc=;
+ b=he5WVj23sw7o2Au46GNTirQUYx1HKqQ4W4Glm0DYZzENsKPsy7qcM3GzHVTbxBg2YfZUaTdpIgrr
+   ORig+eV9Fr/p5Ed8mpk34sYWgHAHweNYDRFxQqAL2Ij2zpNCoCl1KxhnfFNFmeslFW2gma65A/jM
+   N3k23j5YEfvosAdHi/BefpTJE0LZtyd1D+1W+K9kmlgf5OlPzpPpWOYcn/aIex+HoihKurjq3D7G
+   z6SV9nB/pQBP6nHFi9x26SxcuRQzcoYCAHeWmtd59zE1YhQfgRjslOv6LpGCO4UwKYcYpFiG+Y8l
+   5Yuigz9dt7j+RbyYQE5lzNk2ShCrIY0yMcTSvQ==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=nc01; d=mail.wayfarertrip.com;
+ h=To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:Feedback-ID:MIME-Version:Content-Type:Date:from:to:subject;
+ bh=Ky+/XknaHikH3HHAneXj4BlIJqxnRdvE1creQ/mWXXc=;
+ b=dsXU9parZdOkxGIFgs5/EsY6WwjQhLRugF3qtp+eGbhXc/eVVR7GNXNeCmjpP+QHZwXNkKJ+SjIz
+   037qN5H+omVOJFJyLMoV5FDMfPaYnMwFtvkreo3ryjKRHVJOIVF879UzXhojpDqohj9gnBd8H4va
+   iXVjX1mBu062pn6LTSq1RvET6DiGLS6XkYS+n/+teNb57XR2kigN1Az+kyzpql2q/1Fya0pV72Y4
+   A9gxqQSPF4yRkiuPP+mXSRXC2uR7jaCsgylPSnqVJrEoDCdZGL157GYvSxL53poVnG5OuvnlYcEz
+   p89r1H0qZUnBLzTBBQxsmYUSJ3JICd8xfg894Q==
+To: amareswar13724@gmail.com
+From: =?UTF-8?B?QkhFTCByZWNydWl0bWVudCAyMDI1?= <info@wayfarertrip.com>
+Reply-To: =?UTF-8?B?QkhFTCByZWNydWl0bWVudCAyMDI1?= <info@wayfarertrip.com>
+Subject: BHEL has announced openings for Engineer Trainee and Supervisor Trainee positions
+Message-ID: <250414651145423057@mail.wayfarertrip.com>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <https://unsub-pubs.zeemail.in/vtrack?ul=VVcMCgsGVw5EUkhYXgVKVUUTBEIHUlIEB3leWFleDR9aCltMGU9S&ml=VVMODAgGV0UIH0g=&sl=Ix53e21KN2pEMHltTwhWW0JKElFPBwREVktNR1FHT1JWCEoA&clientid=181800&c=000>, <mailto:uns-wayfarertripsmt-181800-4164005-45423057-i-46ee896c2f388bcffda5a14bc293c2fe@mail.wayfarertrip.com?subject=Unsubscribe>
+XOPENERS_181800: 0
+X-Mta-Source: wayfarertripsmt_181800
+X-Mta-Priority: 2
+Feedback-ID: 4164:181800:20251229110117:nczc
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_54ccdddeab9719160d7c8727ee2a5d67"
+Date: Mon, 29 Dec 2025 11:02:45 +0530
+
+
+
+
+--b1_54ccdddeab9719160d7c8727ee2a5d67
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+BHEL Recruitment 2025
+
+
+
+  
+Hello,
+
+  
+    Please find the details regarding the BHEL Recruitment 2025 below:
+  
+
+  
+    Post: Engineer Trainee, Supervisor Trainee & Support Roles
+
+    Total Vacancies: 1,285
+    Last Date to Apply: 30 December 2025
+  
+
+  
+    Bharat Heavy Electricals Limited (BHEL) has announced openings for Engineer Trainee
+    and Supervisor Trainee positions as part of the 2025 recruitment cycle.
+  
+
+
+  
+    Application Link:
+    
+      https://lnkt.wayfarertrip.com/vtrack?clientid=181800&ul=
+VVcMCgsGVw5EUkhYXgVKVUUTBEIHUlIEB3leWFleDR9aCltMGU9S&ml=VVMODAgGV0UIHwYIBFcOTA==&sl=Ix57RG1lHmp1N0hVXQ9MHkEFHFZXEwBER0tQRRZUDlxFVQ==&pp=0&fl=CRZMSEsMTRZbAkZcVhZLHlQMAFwYCAs=&ext=
+    
+  
+
+  
+    Regards,
+
+  
+
+--Click Here to unsubscribe from this newsletter.
+
+
+--b1_54ccdddeab9719160d7c8727ee2a5d67
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BHEL Recruitment 2025</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; color: #000; line-height: 1.6;"><img border="0" src="https://lnkt.wayfarertrip.com/vtrack?clientid=181800&ul=
+VVcMCgsGVw5EUkhYXgVKVUUTBEIHUlIEB3leWFleDR9aCltMGU9S&ml=VVMODAgGV0UIHwRF&sl=Ix53RG1lHmp1N0hVXQ9MHkEFHFZXEwBER0tQRRZUDlxFVQ==&c=0000" >
+<p>
+Hello,</p>
+<p>
+Please find the details regarding the <strong>BHEL Recruitment 2025</strong> below:
+</p>
+<p>
+<strong>Post:</strong> Engineer Trainee, Supervisor Trainee &amp; Support Roles<br>
+<strong>Total Vacancies:</strong> 1,285<br>
+<strong>Last Date to Apply:</strong> 30 December 2025
+</p>
+<p>
+Bharat Heavy Electricals Limited (BHEL) has announced openings for Engineer Trainee
+and Supervisor Trainee positions as part of the 2025 recruitment cycle.
+</p>
+<p>
+<strong>Application Link:</strong><br>
+<a href="https://lnkt.wayfarertrip.com/vtrack?clientid=181800&ul=
+VVcMCgsGVw5EUkhYXgVKVUUTBEIHUlIEB3leWFleDR9aCltMGU9S&ml=VVMODAgGV0UIHwYIBFcOTA==&sl=Ix57RG1lHmp1N0hVXQ9MHkEFHFZXEwBER0tQRRZUDlxFVQ==&pp=0&fl=CRZMSEsMTRZbAkZcVhZLHlQMAFwYCAs=&ext="  target="_blank">
+https://careers.bhel.in
+</a>
+</p>
+<p>
+Regards,<br>
+</p>
+<br/><div><p style='font-size: 12px;line-height: normal;font-family: arial;text-align: center;' >--<br><a href="https://lnkt.wayfarertrip.com/vtrack?clientid=181800&ul=
+VVcMCgsGVw5EUkhYXgVKVUUTBEIHUlIEB3leWFleDR9aCltMGU9S&ml=VVMODAgGV0UIHwYIBFINTA==&sl=Ix5tRG1lHmp1N0hVXQ9MHkEFHFZXEwBER0tQRRZUDlxFVQ==&pp=0&fl=CRZMSAIZTVVWCEAXRAVBVlcWAEJCEwxGHVpWWBdAAEhfBERVF0cRDUZBXkxK&ext=cD1zbXVuc3ViJm1pZD00MTY0JnVpZD1bVU5JUUlEXSZ3dmlkPTAwNQ=="  >Click Here</a> to unsubscribe from this newsletter.<br><br></div></body>
+</html>
+
+
+
+--b1_54ccdddeab9719160d7c8727ee2a5d67--
+
